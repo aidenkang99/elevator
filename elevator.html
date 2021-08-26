@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quarantine</title>
+    <script type="text/javascript" src="processing.js"></script>
+    <style>
+        body{
+            position: relative;
+        }
+        #cube{
+            position: absolute;
+            z-index: 1;
+            width: 100px;
+            margin-left: 35%;
+            margin-top: 30%;
+        }
+        #elevator{
+            padding-left: 0;
+            padding-right: 0;
+            position: absolute;
+            margin-left: 30%;
+        }
+        #screen{
+            padding-left: 0;
+            padding-right: 0;
+            position: absolute;
+            margin-top: 30%;
+            margin-left: 60%;
+        }
+    </style>
+</head>
+<body>
+    <img id="cube"src="cube.png">
+    <canvas id="elevator"data-processing-sources="elevator.pde"></canvas>
+    <canvas id="screen" data-processing-sources="screen.pde"></canvas>
+</body>
+</html>
